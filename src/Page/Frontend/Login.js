@@ -107,9 +107,9 @@ export default function Login() {
                 </div>
                
 
-                <div className={`col-span-full flex justify-end pt-4`}>
+                {/* <div className={`col-span-full flex justify-end pt-4`}>
                   <button type='submit' disabled={isSubmitting} className={`bg-indigo-500 text-lg font-medium block hover:bg-indigo-600 rounded-md px-5 py-2.5 text-white w-full mt-7 disabled:bg-indigo-300 disabled:cursor-not-allowed`}>Sign in</button>
-                </div>
+                </div> */}
 
                 <p className='text-center mt-7 text-slate-500'>Don’t have an account? <Link className='font-medium text-indigo-600'>Contact Us</Link></p>
               </form>
