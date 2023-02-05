@@ -30,13 +30,13 @@ export default function Billing() {
 
   return (
     <div className='pt-8'>
-        <div className='flex items-start justify-between border-b pb-7 border-b-slate-200'>
+        <div className='items-start justify-between border-b sm:flex pb-7 border-b-slate-200'>
             <div>
-                <p className='text-lg font-medium text-slate-800'>Billing</p>
+                <p className='text-base font-medium sm:text-lg text-slate-800'>Billing</p>
                 <p className='mt-1 text-xs text-slate-500'>Manage your billing and payment details.</p>
             </div>
 
-            <div className='flex'>
+            <div className='flex pt-3 sm:pt-0'>
                 <button className='inline-block px-4 py-2 mr-2 text-sm font-medium bg-white border rounded-md text-slate-800 hover:bg-slate-50 border-slate-200'>
                     Cancel
                 </button>
@@ -81,7 +81,7 @@ export default function Billing() {
             <form className={`sm:space-y-8 space-y-5 sm:pt-12 pt-10`} onSubmit={handleSubmit}>
                 <div className='grid sm:gap-10 gap-y-1 sm:grid-cols-3 lg:grid-cols-4'>
                     <div>
-                        <p className='font-medium text-slate-800'>Card Details</p>
+                        <p className='text-sm font-medium text-slate-800 sm:text-base'>Card Details</p>
                     </div>
                     <div className={`col-span-2`}>
                         <div className='grid grid-cols-3 gap-4'>
@@ -169,7 +169,7 @@ export default function Billing() {
 
                 <div className='grid pt-8 border-t sm:gap-10 gap-y-1 sm:grid-cols-3 lg:grid-cols-4 border-slate-200'>
                     <div>
-                        <p className='font-medium text-slate-800'>Email Address</p>
+                        <p className='text-sm font-medium text-slate-800 sm:text-base'>Email Address</p>
                         <p className='pt-1 text-xs '>Invoices will be sent to this email address.</p>
                     </div>
                     <div className={`col-span-2`}>
@@ -216,7 +216,7 @@ export default function Billing() {
 
                 <div className='grid pt-8 border-t sm:gap-10 gap-y-1 sm:grid-cols-3 lg:grid-cols-4 border-slate-200'>
                     <div>
-                        <p className='font-medium text-slate-800'>Street address</p>
+                        <p className='text-sm font-medium text-slate-800 sm:text-base'>Street address</p>
                     </div>
                     <div className={`col-span-2`}>
                     
@@ -240,7 +240,7 @@ export default function Billing() {
                 
                 <div className='grid pt-8 border-t sm:gap-10 gap-y-1 sm:grid-cols-3 lg:grid-cols-4 border-slate-200'>
                     <div>
-                        <p className='font-medium text-slate-800'>City</p>
+                        <p className='text-sm font-medium text-slate-800 sm:text-base'>City</p>
                     </div>
                     <div className={`col-span-2`}>
                     
@@ -264,7 +264,7 @@ export default function Billing() {
 
                 <div className='grid pt-8 border-t sm:gap-10 gap-y-1 sm:grid-cols-3 lg:grid-cols-4 border-slate-200'>
                     <div>
-                        <p className='font-medium text-slate-800'>State / Province</p>
+                        <p className='text-sm font-medium text-slate-800 sm:text-base'>State / Province</p>
                     </div>
                     <div className={`col-span-2`}>
                     
@@ -309,7 +309,7 @@ export default function Billing() {
 
                 <div className='grid pt-8 border-t sm:gap-10 gap-y-1 sm:grid-cols-3 lg:grid-cols-4 border-slate-200'>
                     <div>
-                        <p className='font-medium text-slate-800'>Country</p>
+                        <p className='text-sm font-medium text-slate-800 sm:text-base'>Country</p>
                     </div>
                     <div className={`col-span-2`}>
                         

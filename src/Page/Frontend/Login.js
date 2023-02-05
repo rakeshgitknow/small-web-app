@@ -16,12 +16,12 @@ export default function Login() {
 
 
   return (
-    <div className={` py-10  text-center max-w-lg w-full`}>
-        <img src={Logo} alt={'small logo'} className={`w-40 object-cover mx-auto`} />
-        <h1 className={`text-center text-3xl text-slate-800 mt-7 font-medium`}>Log in to your account</h1>
-        <p className={`mt-2 pb-7`}>Welcome back! Please enter your details.</p>
+    <div className={` py-10  text-center max-w-lg w-full mx-2`}>
+        <img src={Logo} alt={'small logo'} className={`sm:w-40 w-32 object-cover mx-auto`} />
+        <h1 className={`text-center  sm:text-2xl text-xl lg:text-3xl text-slate-900 mt-7 font-medium`}>Log in to your account</h1>
+        <p className={`mt-2 text-sm sm:text-base pb-7`}>Welcome back! Please enter your details.</p>
 
-        <div className='text-left bg-white p-7 rounded-xl'>
+        <div className='p-5 text-left bg-white sm:p-7 rounded-xl'>
           <Formik
             initialValues={LoginData}
             validate={values => {
@@ -96,11 +96,11 @@ export default function Login() {
                   )}
                 </div>
 
-                <div className='flex justify-between pt-4 text-sm'>
+                <div className='flex items-center justify-between pt-4 text-xs sm:text-sm'>
                     <div className='form-checkbox'>
                         <input id='Remember' name='remember' onChange={handleChange}  onBlur={handleBlur} type='checkbox'/>
                         <label htmlFor='Remember'>
-                          <span className='inline-block text-sm text-slate-600'>Remember for 30 days</span>
+                          <span className='inline-block pt-0.5 sm:pt-0 text-slate-600'>Remember for 30 days</span>
                         </label>
                     </div>
                     <Link className='font-medium text-indigo-600'>Forgot password</Link>
@@ -111,7 +111,7 @@ export default function Login() {
                   <button type='submit' disabled={isSubmitting} className={`bg-indigo-500 text-lg font-medium block hover:bg-indigo-600 rounded-md px-5 py-2.5 text-white w-full mt-7 disabled:bg-indigo-300 disabled:cursor-not-allowed`}>Sign in</button>
                 </div>
 
-                <p className='text-center mt-7 text-slate-500'>Don’t have an account? <Link className='font-medium text-indigo-600'>Contact Us</Link></p>
+                <p className='mt-5 text-sm text-center sm:mt-7 sm:text-base text-slate-500'>Don’t have an account? <Link className='font-medium text-indigo-600'>Contact Us</Link></p>
               </form>
             )}
           </Formik>

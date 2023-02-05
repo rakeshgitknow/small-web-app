@@ -11,13 +11,13 @@ export default function Password() {
 
   return (
     <div className='pt-8'>
-        <div className='flex items-start justify-between border-b pb-7 border-b-slate-200'>
+        <div className='items-start justify-between border-b sm:flex pb-7 border-b-slate-200'>
             <div>
-                <p className='text-lg font-medium text-slate-800'>Password & Authentication</p>
+                <p className='text-base font-medium sm:text-lg text-slate-800'>Password & Authentication</p>
                 <p className='mt-1 text-xs text-slate-500'>Update your password and authentication details here.</p>
             </div>
 
-            <div className='flex'>
+            <div className='flex pt-3 sm:pt-0'>
                 <button className='inline-block px-4 py-2 mr-2 text-sm font-medium bg-white border rounded-md text-slate-800 hover:bg-slate-50 border-slate-200'>
                     Cancel
                 </button>
@@ -62,7 +62,7 @@ export default function Password() {
                 
                 <div className='grid sm:gap-10 gap-y-1 sm:grid-cols-3 lg:grid-cols-4'>
                     <div>
-                        <p className='font-medium text-slate-800'>Current Password</p>
+                        <p className='text-sm font-medium text-slate-800 sm:text-base'>Current Password</p>
                         <p className='pt-1 text-xs '>This will be displayed on your profile.</p>
                     </div>
                     <div className={`col-span-2`}>
@@ -93,7 +93,7 @@ export default function Password() {
 
                 <div className='grid sm:gap-10 gap-y-1 sm:grid-cols-3 lg:grid-cols-4'>
                     <div>
-                        <p className='font-medium text-slate-800'>New Password</p>
+                        <p className='text-sm font-medium text-slate-800 sm:text-base'>New Password</p>
                         <p className='pt-1 text-xs '>This will be displayed on your profile.</p>
                     </div>
                     <div className={`col-span-2`}>
@@ -125,15 +125,15 @@ export default function Password() {
 
                 <div className='grid pt-8 border-t sm:gap-10 gap-y-1 sm:grid-cols-3 lg:grid-cols-4 border-slate-200'>
                     <div>
-                        <p className='font-medium text-slate-800'>Connect</p>
+                        <p className='text-sm font-medium text-slate-800 sm:text-base'>Connect</p>
                         <p className='pt-1 text-xs '>A quick snapshot of your company.</p>
                     </div>
-                    <div className={`col-span-2`}>
+                    <div className={`col-span-2 sm:pt-0 pt-2`}>
                     
-                        <div className='flex space-x-7'>
+                        <div className='space-y-5 sm:flex sm:space-x-7 sm:space-y-0'>
                             <div>
                                 <button
-                                className='inline-flex items-center px-5 py-3 text-sm font-medium bg-white border rounded-md border-slate-100 text-slate-600'>
+                                className='flex items-center w-full px-5 py-3 text-sm font-medium bg-white border rounded-md sm:w-auto sm:inline-flex border-slate-100 text-slate-600'>
                                     <span className='pr-3'>
                                         <img className='w-6' src={facebookImage} alt="facebook"/>
                                     </span>
@@ -144,7 +144,7 @@ export default function Password() {
                             </div>
                             <div>
                                 <button
-                                className='inline-flex items-center px-5 py-3 text-sm font-medium bg-white border rounded-md border-slate-100 text-slate-600'>
+                                className='flex items-center w-full px-5 py-3 text-sm font-medium bg-white border rounded-md sm:w-auto sm:inline-flex border-slate-100 text-slate-600'>
                                     <span className='pr-3'>
                                         <img className='w-6' src={googleImage} alt="facebook"/>
                                     </span>

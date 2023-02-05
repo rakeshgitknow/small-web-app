@@ -64,9 +64,9 @@ export default function BillingModal({setCloseModal}) {
             isSubmitting,
           }) => (
             <form className={`space-y-5 pt-5 `} onSubmit={handleSubmit}>
-                <div className='grid grid-cols-4 gap-10'>
+                <div className='grid sm:gap-10 gap-y-1 sm:grid-cols-3 lg:grid-cols-4'>
                     <div>
-                        <p className='font-medium text-slate-800'>Card Details</p>
+                        <p className='text-sm font-medium sm:text-base text-slate-800'>Card Details</p>
                     </div>
                     <div className={`col-span-3`}>
                         <div className='grid grid-cols-3 gap-4'>
@@ -152,9 +152,9 @@ export default function BillingModal({setCloseModal}) {
                     </div>
                 </div>
 
-                <div className='grid grid-cols-4 gap-10 pt-5 border-t border-slate-200'>
+                <div className='grid pt-5 border-t sm:gap-10 gap-y-1 sm:grid-cols-3 lg:grid-cols-4 border-slate-200'>
                     <div>
-                        <p className='font-medium text-slate-800'>Email Address</p>
+                        <p className='text-sm font-medium sm:text-base text-slate-800'>Email Address</p>
                         <p className='pt-1 text-xs '>Invoices will be sent to this email address.</p>
                     </div>
                     <div className={`col-span-3`}>
@@ -199,9 +199,9 @@ export default function BillingModal({setCloseModal}) {
                     </div>
                 </div>
 
-                <div className='grid grid-cols-4 gap-10 pt-5 border-t border-slate-200'>
+                <div className='grid pt-5 border-t sm:gap-10 gap-y-1 sm:grid-cols-3 lg:grid-cols-4 border-slate-200'>
                     <div>
-                        <p className='font-medium text-slate-800'>Street address</p>
+                        <p className='text-sm font-medium sm:text-base text-slate-800'>Street address</p>
                     </div>
                     <div className={`col-span-3`}>
                     
@@ -223,9 +223,9 @@ export default function BillingModal({setCloseModal}) {
                     </div>
                 </div>
                 
-                <div className='grid grid-cols-4 gap-10 pt-5 border-t border-slate-200'>
+                <div className='grid pt-5 border-t sm:gap-10 gap-y-1 sm:grid-cols-3 lg:grid-cols-4 border-slate-200'>
                     <div>
-                        <p className='font-medium text-slate-800'>City</p>
+                        <p className='text-sm font-medium sm:text-base text-slate-800'>City</p>
                     </div>
                     <div className={`col-span-3`}>
                     
@@ -247,9 +247,9 @@ export default function BillingModal({setCloseModal}) {
                     </div>
                 </div>
 
-                <div className='grid grid-cols-4 gap-10 pt-5 border-t border-slate-200'>
+                <div className='grid pt-5 border-t sm:gap-10 gap-y-1 sm:grid-cols-3 lg:grid-cols-4 border-slate-200'>
                     <div>
-                        <p className='font-medium text-slate-800'>State / Province</p>
+                        <p className='text-sm font-medium sm:text-base text-slate-800'>State / Province</p>
                     </div>
                     <div className={`col-span-3`}>
                     
@@ -292,9 +292,9 @@ export default function BillingModal({setCloseModal}) {
                     </div>
                 </div>
 
-                <div className='grid grid-cols-4 gap-10 pt-5 border-t border-slate-200'>
+                <div className='grid pt-5 border-t sm:gap-10 gap-y-1 sm:grid-cols-3 lg:grid-cols-4 border-slate-200'>
                     <div>
-                        <p className='font-medium text-slate-800'>Country</p>
+                        <p className='text-sm font-medium sm:text-base text-slate-800'>Country</p>
                     </div>
                     <div className={`col-span-3`}>
                        
@@ -355,7 +355,7 @@ export default function BillingModal({setCloseModal}) {
                     </div>
                 </div>
 
-                <div className='flex items-start justify-end pb-5 border-t border-slate-200 pt-7'>
+                <div className='flex items-start justify-end border-t sm:pb-5 border-slate-200 pt-7'>
                     <div className='flex'>
                         <button onClick={() => closeModal()} type='button' className='inline-block px-4 py-2 mr-2 text-sm font-medium bg-white border rounded-md text-slate-800 hover:bg-slate-50 border-slate-200'>
                             Cancel
