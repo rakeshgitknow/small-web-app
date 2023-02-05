@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply text-base text-slate-600;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a, button{
+  @apply transition-all;
+}
+
+.form-control{
+  @apply w-full bg-white rounded-md border border-slate-200 text-sm h-11 focus:border-indigo-500 
+  text-slate-700 outline-none px-3 py-1.5 placeholder:text-slate-400;
+}
+.form-control.search-btn{
+  @apply pl-12
+}
+.form-control.icon-input{
+  @apply pl-12
+}
+.form-control.error{
+  @apply border-red-500
+}
+textarea.form-control{
+  @apply h-auto;
+}
+.input-label{
+  @apply block mb-1 text-sm text-slate-700;
+}
+
+
+.form-checkbox{
+  @apply flex items-center;
+}
+.form-checkbox input {
+  @apply hidden w-0 h-0 p-0;
+ 
+}
+.form-checkbox label {
+  @apply relative cursor-pointer;
+}
+
+.form-checkbox label:before {
+  content:'';
+  @apply relative inline-block p-2 mr-2 align-top bg-transparent border rounded-sm cursor-pointer border-slate-400;
+}
+
+.form-checkbox input:checked + label:before {
+  @apply bg-indigo-500 border-indigo-500;
+}
+.form-checkbox input:checked + label:after {
+  content: '';
+  @apply absolute block w-1 h-2 rotate-45 border-b-2 border-r-2 border-white top-1 left-2;
+}
+
+.switch-box label{
+  @apply relative inline-block pl-16;
+}
+.switch-box input{
+  @apply hidden;
+}
+.switch-box label::before{
+  content: "";
+  @apply absolute top-0.5 left-0 w-12 h-6 bg-white border rounded-xl border-slate-200;
+}
+.switch-box label::after{
+  content: "";
+  @apply absolute w-4 h-4 transition-all border left-1 top-1.5 bg-slate-300 rounded-xl border-slate-200;
+}
+.switch-box input:checked + label::after{
+  @apply bg-white left-7;
+}
+.switch-box input:checked + label::before{
+  @apply bg-indigo-500 border-indigo-500;
+}
+
+
+
+.radio-group{
+  @apply relative;
+}
+.radio-group input{
+  @apply absolute invisible;
+}
+.radio-group label{
+  @apply inline-flex items-center px-3 py-2 text-sm cursor-pointer text-slate-600;
+}
+.radio-group input:checked:checked ~ label{
+  @apply text-indigo-500 bg-indigo-100;
+}
+.PhoneInputInput{
+  @apply outline-none !important;
+}
+.mapSection > div:first-child{
+  @apply h-screen
+}
+
+.mapSectionsmall > div{
+  @apply h-full
+}
