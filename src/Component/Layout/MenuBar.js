@@ -10,7 +10,7 @@ export default function MenuBar() {
   // console.log(currentPath)
 
   return (
-    <div className={`fixed md:top-0 left-0 right-0 md:right-auto bottom-0 bg-white md:pb-10 md:w-16 h-14 md:h-full`}>
+    <div className={`fixed md:top-0 left-0 z-20 right-0 md:right-auto bottom-0 bg-white md:pb-10 md:w-16 h-14 md:h-full`}>
         <div className='w-full h-full md:flex md:justify-between md:flex-col'>
           <ul className='flex justify-between md:flex-col'>
             <li className='items-center justify-center hidden w-16 h-16 md:flex'>
