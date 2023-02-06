@@ -123,7 +123,7 @@ export default function Delivery() {
                     className={`form-control icon-input`}
                     id="pickupLocation"
                     name="pickupLocation"
-                    placeholder="212 Croby Hill Road"
+                    placeholder="Address"
                     value={values.pickupLocation}
                     apiKey={'AIzaSyCNKfLc9Skv5ijjGqkTSfJjOsMHIYuFvLc'}
                     onPlaceSelected={(place) =>
@@ -198,6 +198,7 @@ export default function Delivery() {
                   className={`form-control`}
                   international
                   name="pickupPhone"
+                  defaultCountry="AU"
                   placeholder="Phone number"
                   initialValueFormat="national"
                   value={pikPhoneNumber}
@@ -260,7 +261,7 @@ export default function Delivery() {
                     className={`form-control icon-input`}
                     id="dropLocation"
                     name="dropLocation"
-                    placeholder="212 Croby Hill Road"
+                    placeholder="Address"
                     value={values.dropLocation}
                     apiKey={'GoogleApi'}
                     onPlaceSelected={(place) =>
@@ -318,6 +319,7 @@ export default function Delivery() {
                   international
                   name="pickupPhone"
                   placeholder="Phone number"
+                  defaultCountry="AU"
                   initialValueFormat="national"
                   value={dropPhoneNumber}
                   onChange={setDropPhoneNumber}
@@ -361,7 +363,7 @@ export default function Delivery() {
                 <Listbox value={country} onChange={setCountry}>
                   <div className="relative mt-1">
                     <Listbox.Button className="relative w-full py-2.5 pl-3 pr-10 text-left bg-white rounded-md border border-slate-200 cursor-default outline-none sm:text-sm">
-                        <span className="block truncate">{country?.mainText ? country?.mainText : 'Package Size'}</span>
+                        <span className="block truncate">{country?.mainText ? country?.mainText : 'Select Package Size'}</span>
                         <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none text-slate-400">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
@@ -425,7 +427,7 @@ export default function Delivery() {
                   onChange={handleChange}
                   onBlur={handleBlur}
                   value={values.referenceNumber}
-                  placeholder={`212 Croby Hill Road`}
+                  placeholder={`Referecne Number`}
                 />
                 {errors.referenceNumber && touched.referenceNumber && (
                   <p className='mt-0.5 text-xs text-red-500'>
@@ -456,7 +458,7 @@ export default function Delivery() {
                 <Listbox value={packageCover} onChange={setPackageCover}>
                   <div className="relative mt-1">
                     <Listbox.Button className="relative w-full py-2.5 pl-3 pr-10 text-left bg-white rounded-md border border-slate-200 cursor-default outline-none sm:text-sm">
-                        <span className="block truncate">{packageCover?.mainText ? packageCover?.mainText : 'Package Size'}</span>
+                        <span className="block truncate">{packageCover?.mainText ? packageCover?.mainText : 'Select Package Cover'}</span>
                         <span className="absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none text-slate-400">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />

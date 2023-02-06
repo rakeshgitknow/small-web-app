@@ -114,3 +114,13 @@ textarea.form-control{
 .mapSectionsmall > div{
   @apply h-full
 }
+
+.PhoneInputInternationalIconGlobe{
+  @apply hidden;
+}
+.PhoneInputCountryIconImg{
+  @apply ml-1;
+}
+.PhoneInputInput{
+  @apply pl-2;
+}

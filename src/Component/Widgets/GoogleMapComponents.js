@@ -158,7 +158,7 @@ const GoogleMapComponents = (props) => {
     <div className='w-full h-full'>
       <Map
           className="map"
-          initialCenter={{ lat: 14.6091, lng: 121.0223 }}
+          initialCenter={{ lat:-26.650000, lng: 153.066666 }}
           google={props.google}
           onReady={onMapReady}
           style={{ height: '100%', position: 'relative',  width: '100%' }}
